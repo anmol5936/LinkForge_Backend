@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://linkforge666.netlify.app",
+    origin: ["https://linkforge666.netlify.app", "http://localhost:3000"],
     credentials: true,
   })
 );
